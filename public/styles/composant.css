@@ -1,0 +1,262 @@
+@font-face {
+    font-family: MyFont;
+    src: url(font/Lato-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: MyFont;
+    background-color: gray;
+}
+
+header {
+    background-color: black;
+    border-bottom: solid black 2px;
+}
+
+.center-header {
+    height: 130px;
+    display: flex;
+}
+
+.left-link {
+    text-align: left;
+    width: 30%;
+}
+
+.header-img {
+    float: left;
+    width: 75%;
+}
+
+.right-link {
+    margin: auto 30px;
+    text-align: right;
+    align-items: center;
+    display: block;
+    width: 70%;
+}
+
+.link {
+    background-color: yellow;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 15px;
+    margin: 5px;
+}
+
+.icon {
+    margin: 5px;
+}
+
+.container{
+    display: inline-flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.img {
+    width: 60%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    display: flex;
+    margin: auto;
+}
+
+.container-left {
+    width: 25%;
+    display: block;
+    margin: 5px;
+}
+
+.container-center {
+    width: 25%;
+    display: block;
+    margin: 5px;
+}
+
+.container-center-2 {
+    width: 25%;
+    display: block;
+    margin: 5px;
+}
+
+.container-right {
+    width: 25%;
+    display: block;
+    margin: 5px;
+}
+
+.pc-list {
+    display: block;
+    border-radius: 10px;
+    border: solid 2px black;
+    background-color: white;
+    margin: 10px;
+}
+
+.cpu-list {
+    padding-left: 50px;
+}
+
+.title {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    border-top: solid black 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-main {
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.footer-left {
+    width: 30%;
+    display: block;
+    color: white;
+}
+
+.footer-center {
+    width: 40%;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+.footer-right {
+    width: 30%;
+    text-align: right;
+    display: block;
+    color: white;
+}
+
+.network-title {
+    padding-top: 5px;
+    color: white;
+}
+
+.network-list {
+    margin: auto;
+    align-items: center;
+}
+   
+
+.network {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    display: block;
+    align-items: center;
+}
+
+.clock {
+    margin: auto;
+}
+
+@media screen and (min-width: 400px) and ( max-width: 1200px ) {
+    
+    @font-face {
+        font-family: MyFont;
+        src: url(font/Poppins-Regular.ttf);
+    }
+    
+    body {
+        margin: 5px;
+        font-family: MyFont;
+        background-image: url('images/wheel.jpg') !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    header {
+        background-color: gainsboro;
+        border-bottom: solid black 2px;
+    }
+    
+    .img {
+        padding-top: 10px;
+        margin: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .img-2 {
+        float: right;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .center-header {
+        height: 350px;
+        display: flex;
+    }
+    
+    .left-link {
+        align-content: left;
+        width: 100%;
+        transform:
+        translateY(150px)
+        translateX(70px);
+    }
+    
+    .header-img {
+        float: left;
+        width: 75%;
+    }
+    
+    .right-link {
+        margin: auto;
+        text-align: center;
+        align-items: right;
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    .link {
+        background-color: yellow;
+        border-radius: 10px;
+        border: solid black 2px;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 12px 15px;
+        margin: auto;
+        display: block;
+        width: 60%;
+        align-items: right;
+    }
+    
+    .icon {
+        margin: 5px;
+    }
+
+    .box-container {
+        gap: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .box {
+        justify-content: center;
+        width: 97%;
+        box-shadow: 4px 4px 4px 4px gray;
+        border-radius: 10px;
+        padding-top: 20px;
+    }
+
+}

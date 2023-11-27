@@ -1,0 +1,262 @@
+{# Le bloc style #}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('styles/prestations.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+{% endblock %}
+
+{# Le bloc JavaScript #}
+
+{% block javascripts %}
+{% endblock %}
+
+{# Le bloc body #}
+        
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/presta.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Spidernet - Prestations</title>
+</head>
+
+<header>
+    <span class="center-header">
+
+        <nav class="left-link">
+            <img class="header-img"src="images/header.png" alt="">
+        </nav>
+
+        <nav class="right-link">
+
+            <a href="main" class="link">
+                <span class="icon"><i class="bi bi-house"></i>
+                </span>Accueil
+            </a>
+
+            <a href="prestations" class="link">
+                <span class="icon"><i class="bi bi-pencil-fill"></i>
+                </span>Prestations
+            </a>
+            <a href="ordinateur" class="link">
+                <span class="icon"><i class="bi bi-pc-display"></i>
+                </span>Nos ordinateur
+            </a>
+            <a href="composants" class="link">
+                <span class="icon"><i class="bi bi-wrench"></i>
+                </span>Composants
+            </a>
+            <a href="connexion" class="link">
+                <span class="icon"><i class="bi bi-person-fill"></i>
+                </span>Mon compte
+            </a>
+        </nav>
+    </span>
+</header>
+
+<body>
+
+    <span class="container">
+        <span class="container-inline">
+            <div class="container-left">
+                <img class="img" src="images/windows.jpg" alt="">
+            </div>
+            <div class="container-center">
+                <h4 class="title">Installation de Windows</h4>
+                <p class="description">Le système d'exploitation est indispensable pour que votre ordinateur fonctionne. Il est le coeur même de l'ordinateur.
+                Nous vous l'installons et l'activons.
+                </p>
+            </div>
+            <div class="container-right">
+                <h4><span class="icon">
+                        <i class="bi bi-currency-exchange"></i>
+                    </span>
+                    Tarif : De 100€ à 150€
+                </h4>
+                <h4><span class="icon">
+                        <i class="bi bi-clock-fill"></i>
+                    </span>
+                    Durée : De 1h à 2h
+                </h4>
+            </div>
+        </span>
+        <span class="container-inline">
+            <div class="container-left">
+                <img class="img" src="images/clean.jpg" alt="">
+            </div>
+            <div class="container-center">
+                <h4 class="title">Nettoyage des composants</h4>
+                <p class="description">Il est très important que votre ordinateur soit propre pour une dissipation optimale de la chaleur. Nous nettoyons l'intégralité 
+                de votre ordinateur avec nos produits spéciaux.
+                </p>
+            </div>
+            <div class="container-right">
+                <h4><span class="icon">
+                        <i class="bi bi-currency-exchange"></i>
+                    </span>
+                    Tarif : De 20€ à 50€
+                </h4>
+                <h4><span class="icon">
+                        <i class="bi bi-clock-fill"></i>
+                    </span>
+                    Durée : De 30min à 1h30
+                </h4>
+            </div>
+        </span>
+        <span class="container-inline">
+            <div class="container-left">
+                <img class="img" src="images/upgrade.jpg" alt="">
+            </div>
+            <div class="container-center">
+                <h4 class="title">Installation de composants</h4>
+                <p class="description">Une mise à jour de vos composants peux-être parfois nécessaire. Nous remplaçons toutes les pièces nécessaires pour 
+                améliorer votre ordinateur 
+                </p>
+            </div>
+            <div class="container-right">
+                <h4><span class="icon">
+                        <i class="bi bi-currency-exchange"></i>
+                    </span>
+                    Tarif : Varie en fonction des composants
+                </h4>
+                <h4><span class="icon">
+                        <i class="bi bi-clock-fill"></i>
+                    </span>
+                    Durée : De 2h à 3h
+                </h4>
+            </div>
+        </span>
+        <span class="container-inline">
+            <div class="container-left">
+                <img class="img" src="images/gearbox.jpg" alt="">
+            </div>
+            <div class="container-center">
+                <h4 class="title">Boite à vitesse</h4>
+                <p class="description">La boite à vitesse est un élément indispensable de votre véhicule. C'est elle qui permet à votre voiture de posséder plusieurs
+                    rapport ( entre 5 et 10 ). Une boite à vitesse en bon état est primordial pour que les passage de rapport se fassent en toute fluidité. 
+                    Les symptomes principaux sont : les rapport sont dur, voir impossible à passer, une perte d'huile, grincement etc..
+                </p>
+            </div>
+            <div class="container-right">
+                <h4><span class="icon">
+                        <i class="bi bi-currency-exchange"></i>
+                    </span>
+                    Tarif : De 1000€ à 3000€
+                </h4>
+                <h4><span class="icon">
+                        <i class="bi bi-clock-fill"></i>
+                    </span>
+                    Durée : De 3h à 4h
+                </h4>
+            </div>
+        </span>
+        <span class="container-inline">
+            <div class="container-left">
+                <img class="img" src="images/clutch.jpg" alt="">
+            </div>
+            <div class="container-center">
+                <h4 class="title">Embrayage</h4>
+                <p class="description">L'embrayage vient de pair avec la boite à vitesse. Il est connecter à celle-ci et permet de faire
+                    lien entre la rotation en sortie de moteur et les roues en passant par la transmission. L'embrayage sert également au bon fonctionnement du 
+                    passage des rapport. Un embrayage hs résultera d'un passage de rapport très difficile et d'une pédale d'embrayage dure.
+                    Pour limiter les accoup, les embrayage modernes sont dit " bi-masse" ceci comportent un plus un volant moteur. 
+                </p>
+            </div>
+            <div class="container-right">
+                <h4><span class="icon">
+                        <i class="bi bi-currency-exchange"></i>
+                    </span>
+                    Tarif : De 500€ à 1500€
+                </h4>
+                <h4><span class="icon">
+                        <i class="bi bi-clock-fill"></i>
+                    </span>
+                    Durée : De 2h à 4h
+                </h4>
+            </div>
+        </span>
+        <span class="container-inline">
+            <div class="container-left">
+                <img class="img" src="images/frein.jpeg" alt="">
+            </div>
+            <div class="container-center">
+                <h4 class="title">Freinage</h4>
+                <p class="description">Le système de freinage est un élément qu'il est indispensable d'entretenir. Il est indispensable pour la sécurité.
+                    Un système de freinage deffaillant peux être extrement dangereux et provoquer une sortie de route.
+                </p>
+            </div>
+            <div class="container-right">
+                <h4><span class="icon">
+                        <i class="bi bi-currency-exchange"></i>
+                    </span>
+                    Tarif : De 200€ à 800€
+                </h4>
+                <h4><span class="icon">
+                        <i class="bi bi-clock-fill"></i>
+                    </span>
+                    Durée : De 1h30 à 2h30
+                </h4>
+            </div>
+        </span>
+    </span>
+
+    <footer>
+    <span class="footer-main">
+        <span class="footer-left">
+            <ul class="network-list">
+                <h3 class="network-title"><span class="icon"> 
+                </span><i class="bi bi-search"></i>
+                Retrouvez-nous sur :</h3>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-instagram"></i>
+                    </span>
+                    Instagram</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-facebook"></i>
+                    </span>
+                    Facebook</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-snapchat"></i>
+                    </span>
+                    Snapchat</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-whatsapp"></i>
+                    </span>
+                    WhatsApps</a>
+            </ul>
+        </span>
+
+        <span class="footer-center">
+            <h3 class="network-title"><span class="icon">
+            </span><i class="bi bi-geo-alt-fill"></i>
+            Ou sommes-nous ?</h3>
+            <p class="footer-text">31 Route du Ruisseau
+            <p class="footer-text">Batiment A,</p>
+            <p class="footer-text">Toulouse, </p>
+            <p class="footer-text">31000</p>
+        </span>
+
+        <span class="footer-right">
+            <h3 class="network-title"><span>
+            </span><i class="bi bi-clock-fill"></i>
+            Nos horaires : </h3>
+            <span class="clock">
+                <h4>Du Lundi au Vendredi :</h4>
+                <p>9h-12h30 / 14h30-18h30</p>
+                <h4>Le samedi :</h4>
+                <p>10h-12h / 14h-18h</p>
+            </span>
+        </span>
+    </span>
+</footer>
+</body>
+</html>
+{% endblock %}

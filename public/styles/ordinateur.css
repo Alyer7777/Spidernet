@@ -1,0 +1,193 @@
+@font-face {
+    font-family: MyFont;
+    src: url(font/Lato-Regular.ttf);
+}
+
+body {
+    font-family: MyFont;
+    margin: 0;
+    background-color: gray;
+}
+
+header {
+    background-color: black;
+    border-bottom: solid black 2px;
+}
+
+.center-header {
+    height: 130px;
+    display: flex;
+}
+
+.left-link {
+    text-align: left;
+    width: 30%;
+}
+
+.header-img {
+    float: left;
+    width: 75%;
+}
+
+.right-link {
+    margin: auto 30px;
+    text-align: center;
+    align-items: center;
+    display: block;
+    width: 70%;
+}
+
+.link {
+    background-color: yellow;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 15px;
+    margin: 5px;
+}
+
+.icon {
+    margin: 5px;
+}
+
+.title {
+    width: 40%;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 15px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.page {
+    margin: auto;
+}
+
+.container{
+    display: inline-flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    justify-content: center;
+}
+
+.container-left {
+    width: 25%;
+    display: block;
+    margin: 5px;
+}
+
+.container-center {
+    width: 25%;
+    display: block;
+    margin: 5px;
+}
+
+.container-right {
+    width: 25%;
+    display: block;
+    margin: 5px;
+}
+
+.pc-list {
+    display: block;
+    border-radius: 10px;
+    border: solid 2px black;
+    background-color: white;
+    margin: 10px;
+}
+
+.specs {
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.order {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 15px;
+}
+
+.price {
+    color: red;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    border-top: solid black 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-main {
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.footer-left {
+    width: 30%;
+    display: block;
+    color: white;
+}
+
+.footer-center {
+    width: 40%;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+.footer-right {
+    width: 30%;
+    text-align: right;
+    display: block;
+    color: white;
+}
+
+.network-title {
+    padding-top: 5px;
+    color: white;
+}
+
+.network-list {
+    margin: auto;
+    align-items: center;
+}
+   
+
+.network {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    display: block;
+    align-items: center;
+}
+
+.clock {
+    margin: auto;
+}

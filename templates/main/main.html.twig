@@ -1,0 +1,150 @@
+{# Le bloc style #}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('styles/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+{% endblock %}
+
+{# Le bloc JavaScript #}
+
+{% block javascripts %}
+{% endblock %}
+
+{# Le bloc body #}
+        
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Spidernet - Accueil</title>
+</head>
+
+<header>
+    <span class="center-header">
+
+        <nav class="left-link">
+            <img class="header-img"src="images/header.png" alt="">
+        </nav>
+
+        <nav class="right-link">
+
+            <a href="main.html.twig" class="link">
+                <span class="icon"><i class="bi bi-house"></i>
+                </span>Accueil
+            </a>
+
+            <a href="prestations" class="link">
+                <span class="icon"><i class="bi bi-pencil-fill"></i>
+                </span>Prestations
+            </a>
+            <a href="ordinateur" class="link">
+                <span class="icon"><i class="bi bi-pc-display"></i>
+                </span>Nos ordinateur
+            </a>
+            <a href="composants" class="link">
+                <span class="icon"><i class="bi bi-wrench"></i>
+                </span>Composants
+            </a>
+            <a href="connexion" class="link">
+                <span class="icon"><i class="bi bi-person-fill"></i>
+                </span>Mon compte
+            </a>
+        </nav>
+
+    </span>
+</header>
+    
+<body>
+    <img class="img" src="images/main.jpg" alt="">
+    <span class="block">
+        <span class="block-center">
+            <h2 class="block-title">Notre boutique</h2>
+            <h3 class="under-title">
+                <span class="icon"><i class="bi bi-pencil-fill"></i>
+                </span>Nos prestations
+            </h3>
+                <p class="text">Nous réalisons toutes sortes de prestations, de l'entretien jusqu'au montage intégral de votre futur ordinateur. 
+                </p>
+
+            <h3 class="under-title">
+                <span class="icon"><i class="bi bi-wrench-adjustable-circle"></i>
+                </span>Un équipement adapté
+            </h3>
+                <p class="text">Notre installation est toujours aux normes et toujours entretenu. Nous possédons un pont répondant à toutes les éxigences 
+                    ( largeur de la voiture ). Il est également entièrement digitalisé, ce qui permet d'avoir une précision au millimètre près.
+                    Nous ne travaillons qu'avec des outils conformes et nous garantissons un travail de qualité.
+                </p>  
+
+            <h3 class="under-title">
+                <span class="icon"><i class="bi bi-car-front-fill"></i>
+                </span>Nos Véhicules
+            </h3>
+                <p class="text">Tout nos véhicules sont près à la vente et tout les changement nécessaire sont réalisés lorsque que le client
+                    est près à récupérer son véhicule ( A voir dans la rubrique " Véhicules ")
+                </p>
+        </span>
+    </span>
+
+<footer>
+    <span class="footer-main">
+        <span class="footer-left">
+            <ul class="network-list">
+                <h3 class="network-title"><span class="icon"> 
+                </span><i class="bi bi-search"></i>
+                Retrouvez-nous sur :</h3>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-instagram"></i>
+                    </span>
+                    Instagram</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-facebook"></i>
+                    </span>
+                    Facebook</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-snapchat"></i>
+                    </span>
+                    Snapchat</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-whatsapp"></i>
+                    </span>
+                    WhatsApps</a>
+            </ul>
+        </span>
+
+        <span class="footer-center">
+            <h3 class="network-title"><span class="icon">
+            </span><i class="bi bi-geo-alt-fill"></i>
+            Ou sommes-nous ?</h3>
+            <p class="footer-text">31 Route du Ruisseau
+            <p class="footer-text">Batiment A,</p>
+            <p class="footer-text">Toulouse, </p>
+            <p class="footer-text">31000</p>
+        </span>
+
+        <span class="footer-right">
+            <h3 class="network-title"><span>
+            </span><i class="bi bi-clock-fill"></i>
+            Nos horaires : </h3>
+            <span class="clock">
+                <h4>Du Lundi au Vendredi :</h4>
+                <p>9h-12h30 / 14h30-18h30</p>
+                <h4>Le samedi :</h4>
+                <p>10h-12h / 14h-18h</p>
+            </span>
+        </span>
+    </span>
+</footer>
+</body>
+</html>
+
+{% endblock %}
+

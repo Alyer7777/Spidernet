@@ -1,0 +1,466 @@
+{# Le bloc style #}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('styles/composant.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+{% endblock %}
+
+{# Le bloc JavaScript #}
+
+{% block javascripts %}
+{% endblock %}
+
+{# Le bloc body #}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pieces.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Spidernet - Composants</title>
+</head>
+
+<header>
+    <span class="center-header">
+
+        <nav class="left-link">
+            <img class="header-img"src="images/header.png" alt="">
+        </nav>
+
+        <nav class="right-link">
+
+            <a href="main" class="link">
+                <span class="icon"><i class="bi bi-house"></i>
+                </span>Accueil
+            </a>
+
+            <a href="prestations" class="link">
+                <span class="icon"><i class="bi bi-pencil-fill"></i>
+                </span>Prestations
+            </a>
+            <a href="vehicules" class="link">
+                <span class="icon"><i class="bi bi-car-front-fill"></i>
+                </span>Véhicules
+            </a>
+            <a href="composants" class="link">
+                <span class="icon"><i class="bi bi-wrench"></i>
+                </span>Composants
+            </a>
+            <a href="connexion" class="link">
+                <span class="icon"><i class="bi bi-person-fill"></i>
+                </span>Mon compte
+            </a>
+        </nav>
+    </span>
+</header>
+
+<body>
+
+<main class="page">
+        <span class="container">
+            <span class="container-left">
+                <div class="pc-list">
+                    <img class="img" src="images/intel.png" alt="">
+                    <span class="specs">
+                        <h3 class="title">Intel Core i9 :</h3>
+                        <ul class="cpu-list">
+                            <li>i9-14900k</li>
+                            <li>i9-14900ks</li>
+                            <li>i9-13900k</li>
+                            <li>i9-13900kf</li>
+                            <li>i9-13900f</li>
+                            <li>i9-13900</li>
+                            <li>i9-13900t</li>
+                            <li>i9-12900ks</li>
+                            <li>i9-12900ks</li>
+                            <li>i9-12900</li>
+                            <li>i9-12900f</li>
+                            <li>i9-11900k</li>
+                            <li>i9-11900</li>
+                            <li>i9-11900f</li>
+                        </ul>
+                        <h3 class="title">Intel Core i7 :</h3>
+                        <ul class="cpu-list">
+                            <li>i7-14700k</li>
+                            <li>i7-14700ks</li>
+                            <li>i7-13700k</li>
+                            <li>i7-13700ks</li>
+                            <li>i7-13700kf</li>
+                            <li>i7-13790f</li>
+                            <li>i7-13700t</li>
+                            <li>i7-13700t</li>
+                            <li>i7-12700k</li>
+                            <li>i7-12700kf</li>
+                            <li>i7-12700</li>
+                            <li>i7-12700f</li>
+                            <li>i7-12700t</li>
+                            <li>i7-11700k</li>
+                            <li>i7-11700k</li>
+                            <li>i7-11700</li>
+                            <li>i7-11700f</li>
+                            <li>i7-10700k</li>
+                            <li>i7-10700kf</li>
+                            <li>i7-10700f</li>
+                        </ul>
+                        <h3 class="title">Intel Core i5 :</h3>
+                        <ul class="cpu-list">
+                            <li>i5-14600k</li>
+                            <li>i5-14600kf</li>
+                            <li>i5-13600k</li>
+                            <li>i5-13600kf</li>
+                            <li>i5-13600</li>
+                            <li>i5-13600t</li>
+                            <li>i5-13490f</li>
+                            <li>i5-13400t</li>
+                            <li>i5-13400f</li>
+                            <li>i5-13400</li>
+                            <li>i5-12600k</li>
+                            <li>i5-12600kf</li>
+                            <li>i5-12600</li>
+                            <li>i5-12600t</li>
+                            <li>i5-12500</li>
+                            <li>i5-12400</li>
+                            <li>i5-11600k</li>
+                            <li>i5-11600kf</li>
+                            <li>i5-11600</li>
+                            <li>i5-11500</li>
+                            <li>i5-11400</li>
+                            <li>i5-11400f</li>
+                        </ul>
+                        <h3 class="title">Intel Core i3 :</h3>
+                        <ul class="cpu-list">
+                            <li>i3-13100f</li>
+                            <li>i3-13100t</li>
+                            <li>i3-13100</li>
+                            <li>i3-12300f</li>
+                            <li>i3-12300t</li>
+                            <li>i3-12300</li>
+                            <li>i3-13490f</li>
+                            <li>i3-13400t</li>
+                            <li>i3-13400f</li>
+                            <li>i3-12300</li>
+                            <li>i3-12300f</li>
+                            <li>i3-12100f</li>
+                            <li>i3-10320</li>
+                            <li>i3-10300</li>
+                            <li>i3-10300t</li>
+                            <li>i3-10100</li>
+                            <li>i3-10100f</li>
+                            <li>i3-10100t</li>
+                            <li>i3-10100e</li>
+                        </ul>
+                    </span>
+                    </span>
+                </div>
+                <div class="pc-list">
+                    <img class="img" src="images/amd.png" alt="">
+                    <span class="specs">
+                        <li>Processeur : Intel Core i5 12400F</li>
+                        <li>Carte Graphique : RTX 3060</li>
+                        <li>Ram : 16 gb @ 3000mhz</li>
+                        <li>Boitier : Corsair Carbide SPEC-DELTA RGB</li>
+                        <li>Carte Mère : ASUS PRIME B660-PLUS D4</li>
+                    </span>
+                </div>
+                <div class="pc-list">
+                    <img class="img" src="images/pc3.png" alt="">
+                    <span class="specs">
+                        <li>Processeur : Intel Core i9 13900k</li>
+                        <li>Carte Graphique : RTX 4090</li>
+                        <li>Ram : 64 gb @ 4000mhz</li>
+                        <li>Boitier : MRED RGB Crystal Sea</li>
+                        <li>Carte Mère : Gigabyte Z690 AORUS TACHYON</li>
+                    </span>
+                </div>
+            </span>
+
+            <span class="container-center">
+                <div class="pc-list">
+                    <img class="img" src="images/amd.png" alt="">
+                    <span class="specs">
+                        <h3 class="title">Ryzen 9 :</h3>
+                        <ul class="cpu-list">
+                            <li>Ryzen 9 7950x3d</li>
+                            <li>Ryzen 9 7950x</li>
+                            <li>Ryzen 9 7900x3d</li>
+                            <li>Ryzen 9 7900x</li>
+                            <li>Ryzen 9 7900</li>
+                            <li>Ryzen 9 PRO 7945</li>
+                            <li>Ryzen 9 5950x</li>
+                            <li>Ryzen 9 5900x</li>
+                            <li>Ryzen 9 5900</li>
+                            <li>Ryzen 9 3950x</li>
+                            <li>Ryzen 9 3900xt</li>
+                            <li>Ryzen 9 3900x</li>
+                            <li>Ryzen 9 3900</li>
+                        </ul>
+                        <h3 class="title">Ryzen 7 :</h3>
+                        <ul class="cpu-list">
+                            <li>Ryzen 7 7800x3d</li>
+                            <li>Ryzen 7 7700x</li>
+                            <li>Ryzen 7 7700</li>
+                            <li>Ryzen 7 PRO 7745</li>
+                            <li>Ryzen 7 5700g</li>
+                            <li>Ryzen 7 5700ge</li>
+                            <li>Ryzen 7 5700</li>
+                            <li>Ryzen 7 5800x3d</li>
+                            <li>Ryzen 7 5800x</li>
+                            <li>Ryzen 7 5800</li>
+                            <li>Ryzen 7 5700x</li>
+                            <li>Ryzen 7 4700g</li>
+                            <li>Ryzen 7 4700ge</li>
+                            <li>Ryzen 7 4800s</li>
+                            <li>Ryzen 7 4700s</li>
+                            <li>Ryzen 7 3800x</li>
+                            <li>Ryzen 7 3800xt</li>
+                            <li>Ryzen 7 3700x</li>  
+                        </ul> 
+                        <h3 class="title">Ryzen 5 :</h3>
+                        <ul class="cpu-list">
+                            <li>Ryzen 5 7600x</li>
+                            <li>Ryzen 5 7600</li>
+                            <li>Ryzen 5 PRO 7645</li>
+                            <li>Ryzen 5 7500f</li>
+                            <li>Ryzen 5 5600g</li>
+                            <li>Ryzen 5 5600ge</li>
+                            <li>Ryzen 5 5500</li>
+                            <li>Ryzen 5 5600x3d</li>
+                            <li>Ryzen 5 5600x</li>
+                            <li>Ryzen 5 5600</li>
+                            <li>Ryzen 5 PRO 5645</li>
+                            <li>Ryzen 5 4600g</li>
+                            <li>Ryzen 5 4600ge</li>
+                            <li>Ryzen 5 4500</li>
+                            <li>Ryzen 5 4700s</li>
+                            <li>Ryzen 5 3600x</li>
+                            <li>Ryzen 5 3600xt</li>
+                            <li>Ryzen 5 3600</li> 
+                            <li>Ryzen 5 3500x</li> 
+                            <li>Ryzen 5 3500</li>  
+                        </ul>
+                        <h3 class="title">Ryzen 3 :</h3>
+                        <ul class="cpu-list">
+                            <li>Ryzen 3 5300g</li>
+                            <li>Ryzen 3 5300ge</li>
+                            <li>Ryzen 3 PRO 7645</li>
+                            <li>Ryzen 3 5100</li>
+                            <li>Ryzen 3 4300g</li>
+                            <li>Ryzen 3 4300ge</li>
+                            <li>Ryzen 3 4100</li>
+                            <li>Ryzen 3 3300x</li>
+                            <li>Ryzen 3 3100</li>
+                            <li>Ryzen 3 5600</li>
+                            <li>Ryzen 3 PRO 3200g</li>
+                            <li>Ryzen 3 3200g</li>
+                            <li>Ryzen 5 3200ge</li>
+                            <li>Ryzen 5 PRO 3200ge</li> 
+                        </ul>
+                    </span>
+                </div>
+                <div class="pc-list">
+                    <img class="img" src="images/pc5.png" alt="">
+                    <span class="specs">
+                        <li>Processeur : Intel Core i5 13600k</li>
+                        <li>Carte Graphique : RTX 4080 FE</li>
+                        <li>Ram : 32 gb @ 3600mhz</li>
+                        <li>Boitier : Corsair 4000D Airflow</li>
+                        <li>Carte Mère : Gigabyte B760 GAMING X DDR4</li>
+                    </span>
+                </div>
+                <div class="pc-list">
+                    <img class="img" src="images/pc6.png" alt="">
+                    <span class="specs">
+                        <li>Processeur : Intel Core i7 13700k</li>
+                        <li>Carte Graphique : RTX 4070</li>
+                        <li>Ram : 32 gb @ 3600mhz</li>
+                        <li>Boitier : Antec Performance 1 FT</li>
+                        <li>Carte Mère : MSI PRO B660-A DDR4</li>
+                    </span>
+                </div>
+            </span>
+
+            <span class="container-center-2">
+                <div class="pc-list">
+                    <img class="img" src="images/nvidia.png" alt="">
+                    <span class="specs">
+                        <h3 class="title">RTX 4000 Series :</h3>
+                        <ul class="cpu-list">
+                            <li>RTX 4090</li>
+                            <li>RTX 4080</li>
+                            <li>RTX 4070ti</li>
+                            <li>RTX 4070</li>
+                            <li>RTX 4060ti</li>
+                            <li>RTX 4060</li>
+                        </ul>
+                        <h3 class="title">RTX 3000 Series :</h3>
+                        <ul class="cpu-list">
+                            <li>RTX 3090ti</li>
+                            <li>RTX 3090</li>
+                            <li>RTX 3080ti</li>
+                            <li>RTX 3080</li>
+                            <li>RTX 3070ti</li>
+                            <li>RTX 3070</li>
+                            <li>RTX 3060ti</li>
+                            <li>RTX 3060</li>
+                            <li>RTX 3050</li>
+                        </ul>
+                        <h3 class="title">RTX 2000 Series :</h3>
+                        <ul class="cpu-list">
+                            <li>RTX TITAN</li>
+                            <li>RTX 2080ti</li>
+                            <li>RTX 2080</li>
+                            <li>RTX 2080 Super</li>
+                            <li>RTX 2070 Super</li>
+                            <li>RTX 2070</li>
+                            <li>RTX 2060 Super</li>
+                            <li>RTX 2060</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="pc-list">
+                    <img class="img" src="images/pc5.png" alt="">
+                    <span class="specs">
+                        <li>Processeur : Intel Core i5 13600k</li>
+                        <li>Carte Graphique : RTX 4080 FE</li>
+                        <li>Ram : 32 gb @ 3600mhz</li>
+                        <li>Boitier : Corsair 4000D Airflow</li>
+                        <li>Carte Mère : Gigabyte B760 GAMING X DDR4</li>
+                    </span>
+                </div>
+                <div class="pc-list">
+                    <img class="img" src="images/pc6.png" alt="">
+                    <span class="specs">
+                        <li>Processeur : Intel Core i7 13700k</li>
+                        <li>Carte Graphique : RTX 4070</li>
+                        <li>Ram : 32 gb @ 3600mhz</li>
+                        <li>Boitier : Antec Performance 1 FT</li>
+                        <li>Carte Mère : MSI PRO B660-A DDR4</li>
+                    </span>
+                </div>
+            </span>
+
+            <span class="container-right">
+                <div class="pc-list">
+                    <img class="img" src="images/ram.png" alt="">
+                    <span class="specs">
+                        <h3 class="title">DDR5 :</h3>
+                        <ul class="cpu-list">
+                            <li>DDR5-4800 Mhz</li>
+                            <li>DDR5-5200 Mhz</li>
+                            <li>DDR5-5600 Mhz</li>
+                            <li>DDR5-6000 Mhz</li>
+                            <li>DDR5-6200 Mhz</li>
+                            <li>DDR5-6400 Mhz</li>
+                            <li>DDR5-6600 Mhz</li>
+                            <li>DDR5-6800 Mhz</li>
+                            <li>DDR5-7000 Mhz</li>
+                            <li>DDR5-7200 Mhz</li>
+                            <li>DDR5-7600 Mhz</li>
+                            <li>DDR5-7800 Mhz</li>
+                            <li>DDR5-8000 Mhz</li>
+                            <li>DDR5-8200 Mhz</li>
+                            <li>DDR5-8400 Mhz</li>
+                        </ul>
+                        <h3 class="title">DDR4 :</h3>
+                        <ul class="cpu-list">
+                            <li>DDR4-2133 Mhz</li>
+                            <li>DDR4-2400 Mhz</li>
+                            <li>DDR4-2666 Mhz</li>
+                            <li>DDR4-2933 Mhz</li>
+                            <li>DDR4-3000 Mhz</li>
+                            <li>DDR4-3200 Mhz</li>
+                            <li>DDR4-3600 Mhz</li>
+                            <li>DDR4-4000 Mhz</li>
+                            <li>DDR4-4133 Mhz</li>
+                            <li>DDR4-4266 Mhz</li>
+                            <li>DDR4-4400 Mhz</li>
+                            <li>DDR4-4600 Mhz</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="pc-list">
+                    <img class="img" src="images/pc8.png" alt="">
+                    <span class="specs">
+                        <span class="specs">
+                        <li>Processeur : AMD Ryzen 5 5600x</li>
+                        <li>Carte Graphique : AMD Radeon RX6700XT </li>
+                        <li>Ram : 32 gb @ 3000mhz</li>
+                        <li>Boitier : Corsair Carbyde 275R</li>
+                        <li>Carte Mère : ASUS Prime X570-Pro</li>
+                    </span>
+                </div>
+                <div class="pc-list">
+                    <img class="img" src="images/pc9.png" alt="">
+                    <span class="specs">
+                        <li>Processeur : Intel Core i7 12700k</li>
+                        <li>Carte Graphique : RTX 3080ti</li>
+                        <li>Ram : 32 gb @ 3600mhz</li>
+                        <li>Boitier : Antec DF700</li>
+                        <li>Carte Mère : MSI b760 gaming plus wifi</li>
+                    </span>
+                </div>
+            </span>
+        </span>
+    </main>
+
+<footer>
+    <span class="footer-main">
+        <span class="footer-left">
+            <ul class="network-list">
+                <h3 class="network-title"><span class="icon"> 
+                </span><i class="bi bi-search"></i>
+                Retrouvez-nous sur :</h3>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-instagram"></i>
+                    </span>
+                    Instagram</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-facebook"></i>
+                    </span>
+                    Facebook</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-snapchat"></i>
+                    </span>
+                    Snapchat</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-whatsapp"></i>
+                    </span>
+                    WhatsApps</a>
+            </ul>
+        </span>
+
+        <span class="footer-center">
+            <h3 class="network-title"><span class="icon">
+            </span><i class="bi bi-geo-alt-fill"></i>
+            Ou sommes-nous ?</h3>
+            <p class="footer-text">31 Route du Ruisseau
+            <p class="footer-text">Batiment A,</p>
+            <p class="footer-text">Toulouse, </p>
+            <p class="footer-text">31000</p>
+        </span>
+
+        <span class="footer-right">
+            <h3 class="network-title"><span>
+            </span><i class="bi bi-clock-fill"></i>
+            Nos horaires : </h3>
+            <span class="clock">
+                <h4>Du Lundi au Vendredi :</h4>
+                <p>9h-12h30 / 14h30-18h30</p>
+                <h4>Le samedi :</h4>
+                <p>10h-12h / 14h-18h</p>
+            </span>
+        </span>
+    </span>
+</footer>
+</body>
+</html>
+
+{% endblock %}

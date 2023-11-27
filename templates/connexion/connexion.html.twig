@@ -1,0 +1,204 @@
+{# Le bloc style #}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('styles/connexion.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+{% endblock %}
+
+{# Le bloc JavaScript #}
+
+{% block javascripts %}
+{% endblock %}
+
+{# Le bloc body #}
+        
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/connexion.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="scripts/connexion.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Spidernet - Connexion</title>
+</head>
+
+<header>
+    <span class="center-header">
+
+        <nav class="left-link">
+            <img class="header-img"src="images/header.png" alt="">
+        </nav>
+
+        <nav class="right-link">
+
+            <a href="main" class="link">
+                <span class="icon"><i class="bi bi-house"></i>
+                </span>Accueil
+            </a>
+
+            <a href="prestations" class="link">
+                <span class="icon"><i class="bi bi-pencil-fill"></i>
+                </span>Prestations
+            </a>
+            <a href="ordinateur" class="link">
+                <span class="icon"><i class="bi bi-pc-display"></i>
+                </span>Nos ordinateurs
+            </a>
+            <a href="composants" class="link">
+                <span class="icon"><i class="bi bi-wrench"></i>
+                </span>Composants
+            </a>
+            <a href="connexion" class="link">
+                <span class="icon"><i class="bi bi-person-fill"></i>
+                </span>Mon compte
+            </a>
+        </nav>
+    </span>
+</header>
+
+<body>
+    <main class="container">
+        <span class="connexion-container">
+            <div class="left-container">
+                <div class="log">
+                    <h3 class="title">Connexion</h3>
+                    <div class="input">
+                        <label for="mail">E-Mail</label>
+                        <span class="box-icon">
+                            <input class="box" type="mail" id="mail">
+                            <span class="icon">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+                        </span>
+
+                        <label for="password">Mot de passe</label>
+                        <span class="box-icon">
+                            <input class="box" type="text" id="password">
+                            <span class="icon">
+                                <i class="bi bi-braces-asterisk"></i>
+                            </span>
+                        </span>
+
+                        <label for="password">Confirmez le mot de passe</label>
+                        <span class="box-icon">
+                            <input class="box" type="text" id="password">
+                            <span class="icon">
+                                <i class="bi bi-braces-asterisk"></i>
+                            </span>
+                        </span>
+
+                        <label for="verification">Code de vérification</label>
+                        <span class="box-icon">
+                            <input class="box" type="text" id="verification">
+                            <span class="icon">
+                                <i class="bi bi-123"></i>
+                            </span>
+                        </span>
+
+                        <button class="button" type="button" onclick="unavailable()">Connexion</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="create">
+                    <h3 class="title">Créer un compte</h3>
+                    <div class="input">
+                        <label for="mail">E-Mail</label>
+                        <span class="box-icon">
+                            <input class="box" type="mail" id="mail">
+                            <span class="icon">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+                        </span>
+
+                        <label for="password">Mot de passe</label>
+                        <span class="box-icon">
+                            <input class="box" type="text" id="paswword">
+                            <span class="icon">
+                                <i class="bi bi-braces-asterisk"></i>
+                            </span>
+                        </span>
+
+                        <label for="password">Confirmez le mot de passe</label>
+                        <span class="box-icon">
+                            <input class="box" type="text" id="password">
+                            <span class="icon">
+                                <i class="bi bi-braces-asterisk"></i>
+                            </span>
+                        </span>
+
+                        <label for="mail">Numéro de téléphone</label>
+                        <span class="box-icon">
+                            <input class="box" type="text" id="number">
+                            <span class="icon">
+                                <i class="bi bi-123"></i>
+                            </span>
+                        </span>
+
+                        <button class="button" type="button" onclick="unavailable()">Créer un compte</button>
+
+                    </div>
+                </div>
+            </div>
+        </span>
+    </main>
+<footer>
+    <span class="footer-main">
+        <span class="footer-left">
+            <ul class="network-list">
+                <h3 class="network-title"><span class="icon"> 
+                </span><i class="bi bi-search"></i>
+                Retrouvez-nous sur :</h3>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-instagram"></i>
+                    </span>
+                    Instagram</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-facebook"></i>
+                    </span>
+                    Facebook</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-snapchat"></i>
+                    </span>
+                    Snapchat</a>
+                <a href="" class="network">
+                    <span class="icon"><i class="bi bi-whatsapp"></i>
+                    </span>
+                    WhatsApps</a>
+            </ul>
+        </span>
+
+        <span class="footer-center">
+            <h3 class="network-title"><span class="icon">
+            </span><i class="bi bi-geo-alt-fill"></i>
+            Ou sommes-nous ?</h3>
+            <p class="footer-text">31 Route du Ruisseau
+            <p class="footer-text">Batiment A,</p>
+            <p class="footer-text">Toulouse, </p>
+            <p class="footer-text">31000</p>
+        </span>
+
+        <span class="footer-right">
+            <h3 class="network-title"><span>
+            </span><i class="bi bi-clock-fill"></i>
+            Nos horaires : </h3>
+            <span class="clock">
+                <h4>Du Lundi au Vendredi :</h4>
+                <p>9h-12h30 / 14h30-18h30</p>
+                <h4>Le samedi :</h4>
+                <p>10h-12h / 14h-18h</p>
+            </span>
+        </span>
+    </span>
+</footer>
+</body>
+</html>
+
+{% endblock %}
